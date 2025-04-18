@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión1</title>
+  <link rel="stylesheet" href="./css/style.css"> <!-- Asumiendo que reutilizas tu estilo -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./fondosesiones.jpg'); /* Cambia si usas otro fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .seccion {
+      background-color: rgba(12, 42, 56, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    .seccion h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .seccion h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .seccion p {
+      line-height: 1.6;
+    }
+    .botones {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .botones a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #0c2a38;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botones a:hover {
+      background-color: #174b66;
+    }
+    footer {
+        
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.galeria img {
+  width: 48%; /* ocupa casi la mitad del contenedor */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.zoom-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.zoom-img:hover {
+  transform: scale(1.05);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#modal:target {
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor {
+      background-color: #6c9ca0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      color: #555;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e1f5fe;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="seccion">
+      <h1>SESIÓN 1</h1>
+    </section>
+
+
+    <section class="seccion">
+      <h2>1. Descripción del proyecto</h2>
+      <p>Para comenzar, se nos asignó una primera tarea que consistió en la elaboración de un mapa conceptual sobre el tema <strong>'Teoría de Conjuntos'</strong>. Esta actividad tuvo como objetivo reforzar los conocimientos adquiridos durante la sesión impartida en esa misma semana, permitiéndonos organizar de manera visual y estructurada los conceptos clave, tales como los tipos de conjuntos, sus relaciones, operaciones fundamentales y representaciones gráficas. El desarrollo del mapa conceptual nos brindó una herramienta útil para comprender mejor la lógica detrás de esta teoría matemática básica y su aplicación en diversos contextos.</p>
+    </section>
+
+    <section class="seccion">
+        <h2>2. Imagenes relacionadas</h2>
+        <p>En este apartado, mostraré alñgunas imagenes que hacen ilusión al tema.</p>
+        
+        <div class="galeria">
+            <img class="zoom-img" src="https://conjuntosblogblog.wordpress.com/wp-content/uploads/2016/07/operaciones-entre-conjuntos-3-728.jpg" alt="Imagen 1">
+            <img class="zoom-img" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Intersecci%C3%B3n_entre_conjuntos.svg" alt="Imagen 2">
+            <img class="zoom-img" src="https://i.pinimg.com/474x/af/f3/57/aff357186a7639506d70e54c9831b3a2.jpg" alt="Imagen 3">
+            <img class="zoom-img" src="https://w7.pngwing.com/pngs/432/373/png-transparent-union-set-theory-intersection-element-disjoint.png" alt="Imagen 4">
+
+          </div>
+      </section>
+
+      <section class="seccion">
+        <h2>Sección 3</h2>
+        <p>Por otro lado, también dejo algunos videos relacionadas con este proyecto:</p>
+      <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tarVAuh6zF4?si=_uThs4tfSALYbqsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KmcRMlv9_T4?si=EzZDLR8aEKU3x3F7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </section>
+
+    
+
+    <section class="seccion">
+      <h2>4. Archivos adjuntos</h2>
+      <p>El archivo adjunto se trata del documento que contine el mapa conceptual, el cual es el siguiente:</p>
+      <embed src="./docs/Velázquez_Mendoza_Julián_Isagí_Sesión1.pdf" type="application/pdf" width="100%" height="600px" />
+    </section>
+
+    <section class="seccion">
+        <h2>5. Reflexiones</h2>
+        <p>Esta tarea, la cual, como ya mencioné anteriormente, fue elaborar un mapa conceptual sobre la Teoría de Conjuntos, me permitió comprender de manera más clara y organizada los conceptos fundamentales de esta disciplina matemática. A través de la representación visual de los conjuntos, sus relaciones y operaciones, se facilitó la asimilación de los temas clave y su aplicación en diferentes contextos, consolidando así los conocimientos adquiridos en la sesión correspondiente.</p>
+        <p>Si deseas aprender más de este tema, puedes visitar los siguientes sitios:</p><br>
+      
+        <div style="display: flex; justify-content: center;">
+          <div class="contenedor">
+            <h3>Recursos</h3>
+            <ul>
+              <li>
+                <a href="https://concepto.de/que-es-un-conjunto/" target="_blank">
+                  <strong>concepto.de/que-es-un-conjunto</strong>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://economipedia.com/definiciones/teoria-de-conjuntos.html" target="_blank">
+                  <strong>https://economipedia.com/definiciones/teoria-de-conjuntos.html</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <div class="botones">
+        <a href="./index.html">Volver al inicio</a>
+        <a href="./index2.html">Ver sesiones</a>
+      </div>
+ 
+  </div>
+
+  <footer>
+    © 2025 Julián Isagí Velázquez Mendoza – Portafolio Interactivo
+  </footer>
+</body>
+</html>
