@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión7</title>
+  <link rel="stylesheet" href="./css/style.css"> <!-- Asumiendo que reutilizas tu estilo -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./fondosesiones.jpg'); /* Cambia si usas otro fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .seccion {
+      background-color: rgba(12, 42, 56, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    .seccion h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .seccion h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .seccion p {
+      line-height: 1.6;
+    }
+    .botones {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .botones a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #0c2a38;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botones a:hover {
+      background-color: #174b66;
+    }
+    footer {
+        
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.galeria img {
+  width: 48%; /* ocupa casi la mitad del contenedor */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.zoom-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.zoom-img:hover {
+  transform: scale(1.05);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#modal:target {
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor {
+      background-color: #6c9ca0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      color: #555;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e1f5fe;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="seccion">
+      <h1>SESIÓN 7</h1>
+    </section>
+
+
+    <section class="seccion">
+      <h2>1. Descripción del proyecto</h2>
+      <p>En esta ocasión, como tarea para la séptima semana, la tarea consistió en resolver 15 ecuaciones lineales utilizando distintos métodos: sustitución, igualación y reducción. Cada ejercicio indicaba el procedimiento a seguir según el caso, lo que implicaba identificar la forma adecuada de abordar el sistema de ecuaciones. Además, era necesario realizar la comprobación de los resultados, asegurando que las soluciones obtenidas fueran correctas al sustituirlas nuevamente en las ecuaciones originales.</p>
+    </section>
+
+    <section class="seccion">
+        <h2>2. Imagenes relacionadas</h2>
+        <p>En este apartado, mostraré alñgunas imagenes que pueden complementar bien al tema.</p>
+        
+        <div class="galeria">
+            <img class="zoom-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_KFoc67oH7aits6MiA6iv85OEF7bChVDMg&s" alt="Imagen 1">
+            <img class="zoom-img" src="https://www.neurochispas.com/wp-content/uploads/2020/12/sistemas-de-ecuaciones-2x2-ejercicios.png" alt="Imagen 2">
+            <img class="zoom-img" src="https://storage.googleapis.com/portaleducativo-net-publica-g3p6/biblioteca/sistema_ecuaciones_4.jpg" alt="Imagen 3">
+            <img class="zoom-img" src="https://i.ytimg.com/vi/k-50rrBruuM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI2J332v5Yhq7cAJXAXuki-YOwqQ" alt="Imagen 4">
+          </div>
+      </section>
+
+      <section class="seccion">
+        <h2>3. Videos relacionados</h2>
+        <p>Por otro lado, también dejo algunos videos relacionadas con este tema:</p>
+      <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LTfv1G2iYuQ?si=0v5Uq-D242NXDAVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/apPXOlZnRhg?si=bSeVkV3vA-MHqJ6C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ilTVp5uRz8?si=0Sec4kYtidC-nM3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+    
+
+    <section class="seccion">
+      <h2>4. Archivos adjuntos</h2>
+      <p>El archivo adjunto se trata del documento que contine los ejercicios resueltos en la libreta, el cual es el siguiente:</p>
+      <embed src="./docs/Velazquez_Mendoza_Julian_Isagi_Sesion7.pdf" type="application/pdf" width="100%" height="600px" />
+    </section>
+
+    <section class="seccion">
+        <h2>5. Reflexiones</h2>
+        <p>Al resolver las 15 ecuaciones lineales con distintos métodos, como sustitución, igualación y reducción, pude practicar y entender mejor cuál es el enfoque más adecuado para cada tipo de ecuación. Además, al comprobar las soluciones, me aseguré de que los resultados fueran correctos, lo que me ayudó a reforzar los conceptos clave aprendidos en la sesión.</p>
+        <p>Si deseas aprender más de este tema, puedes visitar los siguientes sitios:</p><br>
+      
+        <div style="display: flex; justify-content: center;">
+          <div class="contenedor">
+            <h3>Recursos</h3>
+            <ul>
+              <li>
+                <a href="https://matemathweb.com/algebra/sistema-de-ecuaciones-lineales/" target="_blank">
+                  <strong>https://matemathweb.com/algebra/sistema-de-ecuaciones-lineales/</strong>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.portaleducativo.net/segundo-medio/45/sistema-de-ecuaciones-lineales" target="_blank">
+                  <strong>https://www.portaleducativo.net/segundo-medio/45/sistema-de-ecuaciones-lineales</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <div class="botones">
+        <a href="./index.html">Volver al inicio</a>
+        <a href="./index2.html">Ver sesiones</a>
+      </div>
+ 
+  </div>
+
+  <footer>
+    © 2025 Julián Isagí Velázquez Mendoza – Portafolio Interactivo
+  </footer>
+</body>
+</html>

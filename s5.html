@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión5</title>
+  <link rel="stylesheet" href="./css/style.css"> <!-- Asumiendo que reutilizas tu estilo -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./fondosesiones.jpg'); /* Cambia si usas otro fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .seccion {
+      background-color: rgba(12, 42, 56, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    .seccion h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .seccion h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .seccion p {
+      line-height: 1.6;
+    }
+    .botones {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .botones a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #0c2a38;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botones a:hover {
+      background-color: #174b66;
+    }
+    footer {
+        
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.galeria img {
+  width: 48%; /* ocupa casi la mitad del contenedor */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.zoom-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.zoom-img:hover {
+  transform: scale(1.05);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#modal:target {
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor {
+      background-color: #6c9ca0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      color: #555;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e1f5fe;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="seccion">
+      <h1>SESIÓN 5</h1>
+    </section>
+
+
+    <section class="seccion">
+      <h2>1. Descripción del proyecto</h2>
+      <p>En esta ocasión, la quinta tarea que se nos fue asignada, consistió en la resolución de varios, problemas, estos constaban de:</p>
+      <ul>
+        <li><strong>10</strong> ejercicios de pasar lenguaje normal a lenguaje algebraico</li>
+        <li><strong>14</strong> ecuaciones lineales con 1 variable</li>
+        <li><strong>12</strong> ecuaciones cuadraticas</li>
+      </ul>
+      <p>Esto con la finalidad de reforzar los métodos que nos enseñó la maestra durante las sesiones que nos proporcionó con anterioridad, además nos sirvió para practicar una mejor agilidad mental al momento de resolver estas ecuaciones largas, sin mencionar el pensamiento matemático que también se desarrolla al pasar el lenguaje normal a algebraico.</p>
+    </section>
+
+    <section class="seccion">
+        <h2>2. Imagenes relacionadas</h2>
+        <p>En este apartado, mostraré alñgunas imagenes que pueden complementar bien al tema.</p>
+        <a><img class="zoom-img" src="https://www.geogebra.org/resource/xe5kpdsx/Hwjl2hPOSx206GWI/material-xe5kpdsx.png" alt="Imagen 1"></a>
+        <div class="galeria">
+            
+            <img class="zoom-img" src="https://s1.significados.com/foto/ecuacion-con-parentesis-4d.jpg?class=article" alt="Imagen 2">
+            <img class="zoom-img" src="https://s1.significados.com/foto/ecuacion-de-primer-grado-con-parentesis-y-fracciones2-82.jpg?class=article" alt="Imagen 3">
+            <img class="zoom-img" src="https://www.neurochispas.com/wp-content/uploads/2022/07/Resolver-ecuaciones-con-la-formula-cuadratica.png" alt="Imagen 4">
+            <img class="zoom-img" src="https://www.neurochispas.com/wp-content/uploads/2022/07/20-Ejercicios-de-Ecuaciones-Cuadraticas.png" alt="Imagen 5">
+          </div>
+      </section>
+
+      <section class="seccion">
+        <h2>3. Videos relacionados</h2>
+        <p>Por otro lado, también dejo algunos videos relacionadas con este tema:</p>
+      <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UNWFLuUfiX4?si=HvrTNCJLN8yg66Ae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FrJ-tBTpxzo?si=mRY_yTmUmtPOA18v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZC67c5ar9mA?si=d3PVUae6RVeAs_dD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </section>
+
+    
+
+    <section class="seccion">
+      <h2>4. Archivos adjuntos</h2>
+      <p>El archivo adjunto se trata del documento que contine los ejercicios resueltos en la libreta, el cual es el siguiente:</p>
+      <embed src="./docs/Velazquez_Mendoza_Julian_Isagi_Sesion5.pdf" type="application/pdf" width="100%" height="600px" />
+    </section>
+
+    <section class="seccion">
+        <h2>5. Reflexiones</h2>
+        <p>En esta tarea, se realizaron múltiples tipos de ejercicios, tanto de lenguaje algebraico como de ecuaciones de primer y segundo grado. Al realizarlas, se nos permitió reforzar nuestros conocimientos sobre la correcta interpretación y formulación de expresiones algebraicas, así como desarrollar habilidades para resolver ecuaciones de manera precisa y ordenada. Estos ejercicios resultaron útiles para reforzar los conceptos vistos en clase y aplicarlos en ejercicios concretos.</p>
+        <p>Si deseas aprender más de este tema, puedes visitar los siguientes sitios:</p><br>
+      
+        <div style="display: flex; justify-content: center;">
+          <div class="contenedor">
+            <h3>Recursos</h3>
+            <ul>
+              <li>
+                <a href="https://concepto.de/lenguaje-algebraico/" target="_blank">
+                  <strong>https://concepto.de/lenguaje-algebraico/</strong>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.tutorela.es/matematicas/ecuaciones-de-primer-grado-con-una-incognita" target="_blank">
+                  <strong>https://www.tutorela.es/matematicas/ecuaciones-de-primer-grado-con-una-incognita</strong>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.geogebra.org/m/x8agg4qb" target="_blank">
+                  <strong>https://www.geogebra.org/m/x8agg4qb</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <div class="botones">
+        <a href="./index.html">Volver al inicio</a>
+        <a href="./index2.html">Ver sesiones</a>
+      </div>
+ 
+  </div>
+
+  <footer>
+    © 2025 Julián Isagí Velázquez Mendoza – Portafolio Interactivo
+  </footer>
+</body>
+</html>

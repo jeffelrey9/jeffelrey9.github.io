@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión4</title>
+  <link rel="stylesheet" href="./css/style.css"> <!-- Asumiendo que reutilizas tu estilo -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./fondosesiones.jpg'); /* Cambia si usas otro fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .seccion {
+      background-color: rgba(12, 42, 56, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    .seccion h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .seccion h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .seccion p {
+      line-height: 1.6;
+    }
+    .botones {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .botones a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #0c2a38;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botones a:hover {
+      background-color: #174b66;
+    }
+    footer {
+        
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.galeria img {
+  width: 48%; /* ocupa casi la mitad del contenedor */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.zoom-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.zoom-img:hover {
+  transform: scale(1.05);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#modal:target {
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor {
+      background-color: #6c9ca0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 712px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      color: #555;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e1f5fe;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="seccion">
+      <h1>SESIÓN 4</h1>
+    </section>
+
+
+    <section class="seccion">
+      <h2>1. Descripción del proyecto</h2>
+      <p>En esta cuarta semana, la tarea que se nos solicitó, al igual que en semanas anteriores, consistió en la elaboración de un esquema. Esta vez, opté por usar un mapa mental, más que nada para no quemar tanto el uso de los mapas comceptuales, el tema que trató fue el de <strong>'Diferencias entre las estructuras algebraicas'</strong>, no obstante, el enfoque de este nuevo trabajo fue centrarse más en temas no abarcados la sesión anterior, como el desarrollo binomial, los productos notables, y la simplificación de expresiones, los cuales son temas que si bien no suelen ser tomados en cuenta muy a menudo, son sumamente relevantes para tener una correcta comprensión del tema.</p>
+    </section>
+
+    <section class="seccion">
+        <h2>2. Imagenes relacionadas</h2>
+        <p>En este apartado, mostraré alñgunas imagenes que pueden ayudar a la comprensión del tema.</p>
+        
+             <a><img class="zoom-img" src="https://preview.redd.it/1s26lctov3tc1.jpeg?auto=webp&s=e54932fb39620125aa3ac46322604437a301f860" alt="Imagen 1"></a>
+        <div class="galeria">
+            
+            <img class="zoom-img" src="https://cdn.todamateria.com/imagenes/productosnotables1-cke.jpg" alt="Imagen 2">
+            <img class="zoom-img" src="https://slideplayer.es/slide/3430525/12/images/8/Cuadrado+de+un+binomio.jpg" alt="Imagen 3">
+            <img class="zoom-img" src="https://i.ytimg.com/vi/zvAiTzz17U0/maxresdefault.jpg" alt="Imagen 4">
+            <img class="zoom-img" src="https://ecuacionde.com/wp-content/uploads/2022/05/image-57.png" alt="Imagen 5">
+            <img class="zoom-img" src="https://i0.wp.com/www.ejemplode.com/images/uploads/matematicas/ley-de-signos.jpg" alt="Imagen 6">
+
+          </div>
+      </section>
+
+      <section class="seccion">
+        <h2>3. Videos relacionados</h2>
+        <p>Por otro lado, también dejo algunos videos relacionadas con este tema:</p>
+      <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ri5dwV2K6E?si=lfBHDLFKMKsJJCcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I6FH_gaVYDk?si=KVY7MXNR-svCvp1d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </section>
+
+    
+
+    <section class="seccion">
+      <h2>4. Archivos adjuntos</h2>
+      <p>El archivo adjunto se trata del documento que continee el mapa conceptual, el cual es el siguiente:</p>
+      <embed src="./docs/Velázquez_Mendoza_Julián_Isagí_Sesión4.pdf" type="application/pdf" width="100%" height="600px" />
+    </section>
+
+    <section class="seccion">
+        <h2>5. Reflexiones</h2>
+        <p>Para concluir, esta tarea, la cual consistió en elaborar un mapa mental, esta vez enfocado a subtemas de las estructuras algebraicas, abordó específicamente temas como el desarrollo binomial, los productos notables y la simplificación de expresiones algebraicas. Al realizarla, pude comprender con mayor profundidad cómo se aplican estas herramientas dentro de distintas estructuras, y cómo se relacionan entre sí. La representación visual del mapa mental me ayudó a organizar mejor la información, identificar patrones y ver de forma más clara las propiedades y reglas que rigen estas operaciones, lo que facilitó mi comprensión y análisis del tema.</p>
+        <p>Si deseas aprender más de este tema, puedes visitar los siguientes sitios:</p><br>
+      
+        <div style="display: flex; justify-content: center;">
+          <div class="contenedor">
+            <h3>Recursos</h3>
+            <ul>
+              <li>
+                <a href="https://openstax.org/books/precálculo-2ed/pages/11-6-teorema-del-binomio" target="_blank">
+                  <strong>https://openstax.org/books/precálculo-2ed/pages/11-6-teorema-del-binomio</strong>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.superprof.es/apuntes/escolar/matematicas/algebra/polinomios/productos-notables.html" target="_blank">
+                  <strong>https://www.superprof.es/apuntes/escolar/matematicas/algebra/polinomios/productos-notables.html</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://pasatuexam.mx/exani-ii/pensamiento-matematico/simplificacion-de-expresiones-algebraicas-polinomios-y-leyes-de-los-exponente/" target="_blank">
+                  <strong>https://pasatuexam.mx/exani-ii/pensamiento-matematico/simplificacion-de-expresiones-algebraicas-polinomios-y-leyes-de-los-exponente/</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <div class="botones">
+        <a href="./index.html">Volver al inicio</a>
+        <a href="./index2.html">Ver sesiones</a>
+      </div>
+ 
+  </div>
+
+  <footer>
+    © 2025 Julián Isagí Velázquez Mendoza – Portafolio Interactivo
+  </footer>
+</body>
+</html>

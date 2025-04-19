@@ -1,0 +1,270 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <title>Conclusiones</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at center, #a3d7e7, #3c6e85);
+  overflow: auto;
+  position: relative;
+  color: #fff;
+}
+
+    
+    .stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 0; 
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: blink 2s infinite ease-in-out;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* brillo */
+}
+    
+    .star:nth-child(1) { top: 20%; left: 10%; width: 4px; height: 4px; animation-delay: 0s; }
+    .star:nth-child(2) { top: 30%; left: 25%; width: 6px; height: 6px; animation-delay: 1s; }
+    .star:nth-child(3) { top: 15%; left: 50%; width: 5px; height: 5px; animation-delay: 0.5s; }
+    .star:nth-child(4) { top: 70%; left: 80%; width: 7px; height: 7px; animation-delay: 1.5s; }
+    .star:nth-child(5) { top: 60%; left: 40%; width: 3px; height: 3px; animation-delay: 0.2s; }
+    .star:nth-child(6) { top: 80%; left: 20%; width: 6px; height: 6px; animation-delay: 2s; }
+    .star:nth-child(7) { top: 90%; left: 65%; width: 5px; height: 5px; animation-delay: 1.2s; }
+    .star:nth-child(8) { top: 50%; left: 90%; width: 4px; height: 4px; animation-delay: 0.8s; }
+    .star:nth-child(9) { top: 25%; left: 75%; width: 4px; height: 4px; animation-delay: 0.6s; }
+    .star:nth-child(10) { top: 10%; left: 30%; width: 5px; height: 5px; animation-delay: 1.4s; }
+    .star:nth-child(11) { top: 40%; left: 55%; width: 6px; height: 6px; animation-delay: 1s; }
+    .star:nth-child(12) { top: 75%; left: 45%; width: 5px; height: 5px; animation-delay: 1.8s; }
+    .star:nth-child(13) { top: 55%; left: 85%; width: 3px; height: 3px; animation-delay: 0.3s; }
+    .star:nth-child(14) { top: 80%; left: 10%; width: 7px; height: 7px; animation-delay: 1.6s; }
+    .star:nth-child(15) { top: 5%; left: 60%; width: 6px; height: 6px; animation-delay: 0.7s; }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    .container {
+  position: relative;
+  z-index: 1; 
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #3c6e85e6;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+header, nav, .menu {
+  position: relative;
+  z-index: 2; 
+}
+a {
+  z-index: 2; 
+}
+    h1 {
+      color: #ffffff;
+      margin-bottom: 25px;
+      font-size: 2.8em;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.7;
+      color: #f0faff;
+    }
+
+    .footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: rgb(255, 255, 255);
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px 15px;
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+    .contenedor {
+        z-index: 1;
+      background-color: #3c6e85e6;
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      color: #555;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e1f5fe;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <header class="si">
+      <header class="cabeza">
+        <a class="logo"><img src="./img/unidlogo1.png" alt="">Conclusiones</a>
+      </header>
+      <section class="menu">
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./index2.html">Sesiones</a>
+            <a href="./index3.html">Conclusiones</a>
+        </nav>
+    </section>
+    </header>
+
+    
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+     </div>
+
+    
+        <div class="container">
+      <h1>Conclusiones Finales</h1>
+      <p>
+        A lo largo del desarrollo de este portafolio, pude reunir una serie de tareas que no solo sirvieron como evidencia de los trabajos realizados con el tiempo en esta materia, sino que también marcaron un proceso claro de aprendizaje y práctica constante en temas clave del álgebra superior. Desde la teoría de conjuntos y las estructuras algebraicas, hasta la resolución de ecuaciones, inecuaciones y operaciones con matrices, cada actividad aportó algo diferente a mi formación como ingeniero en sistemas.<br><br>
+        El hecho de realizar mapas conceptuales, cuadros, gráficas y ejercicios paso a paso me permitió comprender mejor los conceptos, no solo memorizarlos. Me ayudó a organizar la información y a identificar patrones o métodos que se repiten, lo cual hace que resolver problemas sea más intuitivo con el tiempo.<br><br>
+        Uno de los aprendizajes más importantes fue entender que en matemáticas no todo se trata solo de resolver rápido, sino de saber cómo y por qué se está haciendo cada paso. El trabajo con matrices, por ejemplo, me enseñó a tener más cuidado con los procedimientos; y al resolver inecuaciones con dos incógnitas, pude ver cómo los números se representan visualmente, lo cual da otra perspectiva del contenido.<br><br>
+        Y si bien no todo fue perfecto y tuve ciertos errores en algunas tareas o procesos, nada quita que aprendí muchas cosas en el transcurso del cuatrimestre. Incluso cuando me equivoqué, esos momentos sirvieron para aclarar dudas, reforzar lo que no había entendido del todo, y darme cuenta de detalles que antes pasaba por alto. Al final, esos errores también fueron parte del aprendizaje y me ayudaron a mejorar.<br><br>
+        Todo este conocimiento no se queda solo en el aula. Entender bien estos temas me será útil más adelante en otras materias, en problemas reales que requieran análisis lógico o en cualquier situación donde haya que organizar información, tomar decisiones o razonar con claridad. Este portafolio refleja ese proceso y cómo cada tarea fue sumando a una base más sólida de comprensión.<br><br>
+        Sin más que decir, agradezco que hayan tomado el tiempo para revisar este portafolio. Fue un trabajo que requirió esfuerzo, dedicación y muchas horas frente a ejercicios, y muchas más horas frente a la computadora programando todo esto, pero también fue una oportunidad para crecer académicamente y demostrar todo lo aprendido a lo largo del curso. Espero que el contenido aquí presentado refleje ese proceso y sea una muestra clara del avance que he tenido.<br><br><br><br>
+        ¡Muchas gracias!<br>
+        💙
+      </p>
+      </div>
+ 
+
+
+
+
+      <div style="display: flex; justify-content: center;">
+        <div class="contenedor">
+          <h3>Perfiles profesionales</h3>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/home/?mcid=7000592715335761922&gclid=CjwKCAjw8IfABhBXEiwAxRHlsO9jPlG-WjAa2SBcv-eI9j_T5AMIEB_zs2MB2eTvfl7VF9CehgnhlRoC_icQAvD_BwE&cid=&src=go-pa&gclsrc=aw%2Eds&gad_source=1&trk=sem-ga_campid%2E19001150288_asid%2E143806640876_crid%2E694479389938_kw%2Elinkedin_d%2Ec_tid%2Ekwd-148086543_n%2Eg_mt%2Ee_geo%2E9131098&originalSubdomain=mx" target="_blank">
+                <strong>LinkedIn</strong>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://github.com" target="_blank">
+                <strong>GitHub</strong>
+              </a>
+            </li>
+
+            <li>
+                <a href="https://es.wix.com/portafolio-digital" target="_blank">
+                  <strong>Wix</strong>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://portfolio.adobe.com" target="_blank">
+                  <strong>Adobe Portfolio</strong>
+                </a>
+              </li>
+
+          </ul>
+        </div>
+      </div>
+
+      
+
+
+       <div class="footer">
+      © 2025 Julián Isagí Velázquez Mendoza – Portafolio Interactivo
+       </div>
+        </main>
+       </body>
+     </html>
